@@ -1,21 +1,12 @@
 :root {
-  --website-primary-color: #1f1c1e;
-  --h3-color: #030213;
-  --h1-color: #02330e;
-  --primary-color: #961580;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --box-shadow: 10px 10px 10px #f5cef5;
   --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
-  padding: 0 20px;
-  margin-top: 100px;
-  color: var(--website-primary-color);
 }
 
 h1,
@@ -30,24 +21,12 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 96px;
   line-height: 1.5;
 }
 
 h2 {
-font-size: 64px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.9;
-  margin-top: 10px;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+  font-size: 64px;
 }
 
 p {
@@ -56,57 +35,6 @@ p {
   line-height: 30px;
 }
 
-.navigation-links a {
-  margin: 20px;
-}
- .homepage div {
-  display: flex;
-  text-align: center;
-  flex: 1; 
-  text-decoration: none;
- }
-
-.link{
-  color: rgb(18, 94, 235);
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.link :visited{
-  color: rgb(243, 101, 7);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
- .homeoptions{
-    color: rgb(25, 25, 31) ;
-    border: 1px solid blueviolet;
-    padding: 5px;
-    box-shadow: var(--box-shadow);
-    text-decoration: none;
- }
- 
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -131,17 +59,28 @@ p {
   padding: 160px 20px;
 }
 
-.content-container h1 {
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
-.content-container h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
 
-.content-container {
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.content {
   margin: 30px;
 }
 
@@ -167,9 +106,40 @@ p {
   padding: 120px 60px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   h1 {
-    font-size:  46px;
+    font-size: 44px;
     line-height: 56px;
   }
 
@@ -191,41 +161,3 @@ p {
     text-align: center;
   }
 }
-
- .introduction{
-  text-align: center;
-  background: white;
-  max-width: 100%;
-  margin-top: 10px;
-  
- }
-
- strong{
-  color: rgb(104, 101, 101);
-  font-size: 24px;
-  opacity: 0.7;
-  margin-top: 10px;
- }
-
- a {
-  color: rgb(25, 25, 31);
-  text-decoration: none;
- }
-
-  a :visited {
-   color: rgb(26, 30, 218);
- }
-
- .backtohp{
-  font-weight: 550;
-  border: 1px solid rgb(156, 104, 7) ;
-  padding: 5px;
-  border-radius: 10px;
-  background: rgb(241, 198, 116);
- 
- }
-
- img{
-  mix-blend-mode: multiply;
-  max-width: 55%;
- }

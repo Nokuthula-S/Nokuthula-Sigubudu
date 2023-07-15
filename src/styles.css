@@ -1,6 +1,6 @@
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --secondary-color: rgb(250, 232, 204);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -207,4 +207,10 @@ footer .social-links a:hover {
     padding: 0;
     text-align: center;
   }
+}
+
+.jhb{
+  background-blend-mode: multiply;
+  background-color: var(--secondary-color) ;
+  max-width: 100%;
 }
